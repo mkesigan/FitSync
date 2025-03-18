@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">  <!-- Makes the shape circular -->
+
+    <!-- Background color -->
+    <solid android:color="@color/accentColor" />
+
+    <!-- Border (stroke) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/gray"/> <!-- Change color as needed -->
+</shape>

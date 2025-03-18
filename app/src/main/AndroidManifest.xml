@@ -13,6 +13,26 @@
         android:theme="@style/Theme.Lab_Exam2"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity android:name=".summary" />
+        <activity android:name=".exercise1" />
+        <activity android:name=".exercise" />
+        <activity android:name=".category" />
+        <activity android:name=".progress" />
+        <activity android:name=".reminder" />
+        <activity android:name=".workouts" />
+        <activity android:name=".account" />
+        <activity android:name=".profile" />
+        <activity android:name=".fitnessActivity" />
+        <activity android:name=".Trainings" />
+        <activity android:name=".activity_home" />
+        <activity android:name=".getStarted_3" />
+        <activity android:name=".getStarted_2" />
+        <activity android:name=".getStarted_1" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

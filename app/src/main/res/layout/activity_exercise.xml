@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exercise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".exercise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/leftArrow"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="match_parent"
+                android:layout_height="277dp"
+                app:srcCompat="@drawable/full_body" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:background="@drawable/training_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="26dp"
+                    android:text="Upper Body Workout"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Residence training, also known as strength training, is an essential componenet of any fitness routine, especially for your upper body."
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="107dp"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/training_bg"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="26dp">
+
+                        <ImageView
+                            android:id="@+id/imageView48"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="8dp"
+                            app:srcCompat="@drawable/clock" />
+
+                        <TextView
+                            android:id="@+id/textView69"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:text="30 min"
+                            android:textColor="@color/secondaryColor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="107dp"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/training_bg"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="21dp">
+
+                        <ImageView
+                            android:id="@+id/imageView49"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            app:srcCompat="@drawable/fire" />
+
+                        <TextView
+                            android:id="@+id/textView70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginTop="9dp"
+                            android:text="340 Cal"
+                            android:textColor="@color/secondaryColor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="107dp"
+                        android:layout_height="102dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/training_bg"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="21dp">
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:layout_marginTop="1dp"
+                            app:srcCompat="@drawable/action" />
+
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:text="Beginner"
+                            android:textColor="@color/secondaryColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:text="Equipments"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        android:text="2 items"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="107dp"
+                        android:layout_height="102dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/activity_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView51"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/thumbill" />
+
+                        <TextView
+                            android:id="@+id/textView74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:text="2 Dumbells"
+                            android:textColor="@color/secondaryColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="107dp"
+                        android:layout_height="102dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/activity_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/mad" />
+
+                        <TextView
+                            android:id="@+id/textView75"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="37dp"
+                            android:text="Mat"
+                            android:textColor="@color/secondaryColor"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="12dp"
+                android:text="Exercises"
+                android:textColor="@color/secondaryColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Warm-up"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2 Exercises  . 2 Minutes"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Cobra Stretch"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:40"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="76dp">
+
+                <ImageView
+                    android:id="@+id/imageView55"
+                    android:layout_width="142dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Plank Ups"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:30"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView56"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Workout"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="8dp"
+                    android:text="3 Exercises  . 2 Minutes"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="151dp">
+
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Double Heels"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView86"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 20"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="226dp">
+
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Lung Jumps"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 20"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="301dp">
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e5" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Squat Jumps"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 20"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Workout"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2 Exercises  . 2 Minutes"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="376dp">
+
+                <ImageView
+                    android:id="@+id/imageView63"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView93"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Boxer Shuffle"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView94"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 20"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView654"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/training_bg"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="451dp">
+
+                <ImageView
+                    android:id="@+id/imageView66"
+                    android:layout_width="142dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/e7" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Plank Reaches"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/textView96"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 20"
+                        android:textSize="16sp"
+                        tools:textColor="@color/gray" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/node" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="136dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/accentColor"
+                android:text="Start Workout"
+                android:textColor="@color/secondaryColor"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

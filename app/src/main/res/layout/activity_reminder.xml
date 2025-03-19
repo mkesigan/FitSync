@@ -5,27 +5,27 @@
     android:id="@+id/reminder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".reminder">
 
     <ImageView
         android:id="@+id/leftArrow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="17dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left_arrow" />
 
     <TextView
         android:id="@+id/textView46"
-        android:layout_width="197dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="118dp"
         android:layout_marginTop="30dp"
-        android:text="Workout Reminders"
-        android:textColor="@color/secondaryColor"
+        android:text="@string/reminder"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginTop="40dp"
         android:text="Select the days you want to exercise"
         android:textAlignment="center"
-        android:textColor="@color/secondaryColor"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView46" />
@@ -156,7 +156,7 @@
         android:layout_marginTop="26dp"
         android:text="Select the times you want to exercise"
         android:textAlignment="center"
-        android:textColor="@color/secondaryColor"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout1" />
@@ -165,8 +165,8 @@
         android:id="@+id/imageView36"
         android:layout_width="306dp"
         android:layout_height="203dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView55"
         app:srcCompat="@drawable/time_picker" />
@@ -175,10 +175,10 @@
         android:id="@+id/button5"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="113dp"
         android:layout_marginTop="26dp"
         android:backgroundTint="@color/accentColor"
-        android:text="Create a reminder"
+        android:text="@string/create"
         android:textColor="@color/secondaryColor"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -189,7 +189,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -198,9 +198,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -208,9 +208,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -218,9 +218,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -228,9 +228,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile1"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

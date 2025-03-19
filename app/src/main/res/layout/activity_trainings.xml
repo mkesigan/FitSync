@@ -5,7 +5,7 @@
     android:id="@+id/trainings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".Trainings">
 
     <!-- ScrollView for scrolling content -->
@@ -29,8 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Trainings"
-                android:textColor="@color/secondaryColor"
+                android:text="@string/trainings"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/bg"
+                android:background="@drawable/category_bg"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:text="Search something"
+                    android:text="@string/search"
                     android:textColor="@color/secondaryColor"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -107,7 +107,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -141,7 +141,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -184,7 +184,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -220,7 +220,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -266,7 +266,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -302,7 +302,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/training_bg"
+                    android:background="@drawable/category_bg"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -346,7 +346,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -355,9 +355,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -365,9 +365,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings1"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings1" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -375,9 +375,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -385,9 +385,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

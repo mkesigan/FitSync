@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/exercise1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".exercise1">
 
     <!-- Exercise Header -->
@@ -17,7 +16,7 @@
         android:layout_marginLeft="26dp"
         android:layout_marginTop="26dp"
         android:text="exercise 4/7"
-        android:textColor="@color/secondaryColor"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +28,7 @@
         android:layout_width="362dp"
         android:layout_height="270dp"
         android:layout_marginTop="26dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/exercise_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:text="00:22"
-        android:textColor="@color/secondaryColor"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,11 +59,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lung Jumps Alternated"
-        android:textColor="@color/secondaryColor"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/textView79"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView79" />
 
     <!-- Next Exercise Section -->
     <TextView
@@ -83,7 +82,7 @@
         android:layout_width="367dp"
         android:layout_height="68dp"
         android:layout_marginTop="17dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/exercise_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,9 +128,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/bg"
-        android:text="Pause"
-        android:textColor="@color/accentColor"
+        android:backgroundTint="@color/gray"
+        android:text="@string/pause"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -143,7 +142,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="80dp"
         android:backgroundTint="@color/accentColor"
-        android:text="Finish"
+        android:text="@string/finish"
         android:textColor="@color/secondaryColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -153,7 +152,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -162,9 +161,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home1" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -172,9 +171,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -182,9 +181,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -192,9 +191,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

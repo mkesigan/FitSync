@@ -5,15 +5,15 @@
     android:id="@+id/progress"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".progress">
 
     <ImageView
         android:id="@+id/leftArrow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="17dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left_arrow" />
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="30dp"
-        android:text="Progress"
-        android:textColor="@color/secondaryColor"
+        android:text="@string/progress"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="26dp"
         android:layout_marginTop="100dp"
-        android:text="Training History"
-        android:textColor="@color/secondaryColor"
+        android:text="@string/training_history"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="22dp"
                 android:text="S"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:text="14"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="M"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="15"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="T"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="16"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="W"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="17"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -196,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="T"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -214,7 +214,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="18"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="F"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -247,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="19"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -262,7 +262,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="S"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
@@ -280,7 +280,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:text="20"
-                android:textColor="@color/secondaryColor"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
@@ -290,7 +290,7 @@
         android:layout_width="372dp"
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -322,7 +322,7 @@
             android:layout_marginLeft="26dp"
             android:text="Year"
             android:textSize="18sp"
-            tools:textColor="@color/secondaryColor" />
+            android:textColor="@color/secondaryColor" />
     </LinearLayout>
 
     <ImageView
@@ -340,7 +340,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -349,9 +349,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -359,9 +359,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -369,9 +369,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -379,9 +379,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile1"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

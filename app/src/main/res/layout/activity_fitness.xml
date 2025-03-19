@@ -5,7 +5,7 @@
     android:id="@+id/profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".fitnessActivity">
 
     <ScrollView
@@ -26,8 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
                 android:layout_marginTop="32dp"
-                android:text="Activity"
-                android:textColor="@color/secondaryColor"
+                android:text="@string/activity"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/date3"
+                    android:id="@+id/date1"
                     android:layout_width="61dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="7dp"
@@ -60,16 +60,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/date3"
+                    android:id="@+id/date2"
                     android:layout_width="61dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
                     android:background="@drawable/activity_bg"
-                    android:backgroundTint="@color/bg"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/textView16"
                         android:layout_width="39dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -87,11 +86,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
                     android:background="@drawable/activity_bg"
-                    android:backgroundTint="@color/bg"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/textView17"
                         android:layout_width="39dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -104,16 +102,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/date3"
+                    android:id="@+id/date4"
                     android:layout_width="61dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
                     android:background="@drawable/activity_bg"
-                    android:backgroundTint="@color/bg"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/textView18"
                         android:layout_width="39dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -126,16 +123,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/date3"
+                    android:id="@+id/date5"
                     android:layout_width="61dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
                     android:background="@drawable/activity_bg"
-                    android:backgroundTint="@color/bg"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/textView19"
                         android:layout_width="39dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -165,7 +161,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/textView20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -175,7 +171,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView19"
+                        android:id="@+id/imageView1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/steps" />
@@ -189,7 +185,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView18"
+                        android:id="@+id/textView29"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -199,13 +195,13 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView20"
+                        android:id="@+id/imageView2"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         app:srcCompat="@drawable/heart" />
 
                     <TextView
-                        android:id="@+id/textView31"
+                        android:id="@+id/textView21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -229,7 +225,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/textView22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -239,7 +235,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView21"
+                        android:id="@+id/imageView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/calory" />
@@ -254,7 +250,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView18"
+                        android:id="@+id/textView28"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -264,13 +260,13 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView22"
+                        android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="77dp"
                         app:srcCompat="@drawable/sleep" />
 
                     <TextView
-                        android:id="@+id/textView31"
+                        android:id="@+id/textView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -295,7 +291,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/textView24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -305,13 +301,13 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView19"
+                        android:id="@+id/imageView5"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         app:srcCompat="@drawable/training" />
 
                     <TextView
-                        android:id="@+id/textView31"
+                        android:id="@+id/textView25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -327,7 +323,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView18"
+                        android:id="@+id/textView26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="17dp"
@@ -337,13 +333,13 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView20"
+                        android:id="@+id/imageView6"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         app:srcCompat="@drawable/distance" />
 
                     <TextView
-                        android:id="@+id/textView31"
+                        android:id="@+id/textView27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -359,7 +355,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -368,9 +364,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -378,9 +374,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -388,9 +384,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity1"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity1" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -398,9 +394,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

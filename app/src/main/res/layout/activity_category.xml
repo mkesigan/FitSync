@@ -5,44 +5,45 @@
     android:id="@+id/category"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@color/secondaryColor"
     tools:context=".category">
 
     <!-- Back Arrow -->
     <ImageView
         android:id="@+id/leftArrow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/left_arrow"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="31dp" />
+        app:srcCompat="@drawable/left_arrow" />
 
     <!-- Title -->
     <TextView
         android:id="@+id/textView65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category"
-        android:textColor="@color/secondaryColor"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/category"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/leftArrow"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="39dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Search Bar -->
     <LinearLayout
         android:id="@+id/searchBar"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="17dp"
-        android:background="@color/bg"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/category_bg"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView65">
@@ -56,11 +57,9 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:text="Search something"
+            android:text="@string/search"
             android:textColor="@color/secondaryColor"
             android:textSize="16sp" />
     </LinearLayout>
@@ -70,7 +69,7 @@
         android:layout_width="366dp"
         android:layout_height="71dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,10 +91,10 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Cardio"
+                android:layout_marginTop="10dp"
+                android:text="@string/cardio"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -110,7 +109,7 @@
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="90dp"
+            android:layout_marginLeft="86dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/ic_arrow_right" />
     </LinearLayout>
@@ -120,7 +119,7 @@
         android:layout_width="366dp"
         android:layout_height="71dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +127,7 @@
 
         <ImageView
             android:id="@+id/imageView20"
-            android:layout_width="147dp"
+            android:layout_width="142dp"
             android:layout_height="71dp"
             android:layout_marginTop="3dp"
             app:srcCompat="@drawable/yoga" />
@@ -142,10 +141,10 @@
                 android:id="@+id/textView50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Yoga"
+                android:layout_marginTop="10dp"
+                android:text="@string/yoga"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView51"
@@ -170,7 +169,7 @@
         android:layout_width="366dp"
         android:layout_height="71dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,7 +177,7 @@
 
         <ImageView
             android:id="@+id/imageView23"
-            android:layout_width="147dp"
+            android:layout_width="142dp"
             android:layout_height="71dp"
             android:layout_marginTop="3dp"
             app:srcCompat="@drawable/stretch" />
@@ -192,10 +191,10 @@
                 android:id="@+id/textView53"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Stretch"
+                android:layout_marginTop="10dp"
+                android:text="@string/stretch"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView54"
@@ -210,7 +209,7 @@
             android:id="@+id/imageView24"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="75dp"
+            android:layout_marginLeft="77dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/ic_arrow_right" />
     </LinearLayout>
@@ -220,7 +219,7 @@
         android:layout_width="367dp"
         android:layout_height="71dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -228,7 +227,7 @@
 
         <ImageView
             android:id="@+id/imageView25"
-            android:layout_width="147dp"
+            android:layout_width="142dp"
             android:layout_height="71dp"
             android:layout_marginTop="3dp"
             app:srcCompat="@drawable/gym" />
@@ -242,10 +241,10 @@
                 android:id="@+id/textView55"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Gym"
+                android:layout_marginTop="10dp"
+                android:text="@string/gym"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView76"
@@ -260,7 +259,7 @@
             android:id="@+id/imageView26"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="75dp"
+            android:layout_marginLeft="77dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/ic_arrow_right" />
     </LinearLayout>
@@ -270,14 +269,14 @@
         android:layout_width="367dp"
         android:layout_height="71dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout4">
 
         <ImageView
             android:id="@+id/imageView28"
-            android:layout_width="147dp"
+            android:layout_width="142dp"
             android:layout_height="71dp"
             android:layout_marginTop="3dp"
             app:srcCompat="@drawable/training" />
@@ -291,10 +290,10 @@
                 android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Upper Body"
+                android:layout_marginTop="10dp"
+                android:text="@string/upper_body"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView66"
@@ -310,7 +309,7 @@
             android:id="@+id/imageView30"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="55dp"
+            android:layout_marginLeft="75dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/ic_arrow_right" />
     </LinearLayout>
@@ -320,7 +319,7 @@
         android:layout_width="367dp"
         android:layout_height="71dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/training_bg"
+        android:background="@drawable/category_bg"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -328,7 +327,7 @@
 
         <ImageView
             android:id="@+id/imageView29"
-            android:layout_width="147dp"
+            android:layout_width="142dp"
             android:layout_height="71dp"
             android:layout_marginTop="3dp"
             app:srcCompat="@drawable/running" />
@@ -342,10 +341,10 @@
                 android:id="@+id/textView30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Running"
+                android:layout_marginTop="10dp"
+                android:text="@string/running"
                 android:textColor="@color/secondaryColor"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView31"
@@ -361,7 +360,7 @@
             android:id="@+id/imageView31"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="72dp"
+            android:layout_marginLeft="76dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/ic_arrow_right" />
     </LinearLayout>
@@ -371,7 +370,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/bg"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -380,9 +379,9 @@
             android:layout_height="26dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
-            app:srcCompat="@drawable/home1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home1" />
 
         <ImageView
             android:id="@+id/trainingsIcon"
@@ -390,9 +389,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/trainings"
             app:layout_constraintStart_toEndOf="@id/homeIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trainings" />
 
         <ImageView
             android:id="@+id/activityIcon"
@@ -400,9 +399,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/activity"
             app:layout_constraintStart_toEndOf="@id/trainingsIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/activity" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -410,9 +409,9 @@
             android:layout_height="38dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/profile"
             app:layout_constraintStart_toEndOf="@id/activityIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
